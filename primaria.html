@@ -20,22 +20,28 @@
     </header>
     <main style="padding: 40px;">
         <p>Bienvenido a la sección de educación primaria. Aquí encontrarás recursos para estudiantes de nivel inicial.</p>
-        <button class="btn-inicio" onclick="window.location.href='index.html'">🏠 Inicio</button>
-        <section class="suma-section">
-            <h2>🧮 Suma de Números</h2>
-            <p>Ingresá dos números y te mostramos el resultado de la suma:</p>
+       
+    <section class="suma-section">
+        <h2>🎲 Juego de Matemáticas</h2>
+        <p>Ingresá dos números, elegí una operación y mirá el resultado:</p>
 
-            <div class="suma-form">
-                <input type="number" id="num1" placeholder="Primer número">
-                <input type="number" id="num2" placeholder="Segundo número">
-                <button onclick="realizarSuma()">Sumar</button>
-            </div>
+        <div class="suma-form">
+            <input type="number" id="num1" placeholder="Primer número">
+            <select id="operacion">
+                <option value="+">➕ Suma</option>
+                <option value="-">➖ Resta</option>
+                <option value="*">✖ Multiplicación</option>
+            </select>
+            <input type="number" id="num2" placeholder="Segundo número">
+            <button onclick="calcularOperacion()">Calcular</button>
+        </div>
 
-            <div class="resultado-suma" id="resultadoSuma">
-                <!-- Acá se mostrará el resultado -->
-            </div>
-        </section>
+        <div class="resultado-suma" id="resultadoOperacion">
+            <!-- Resultado visual -->
+        </div>
+    </section>
 
+    <button class="btn-inicio" onclick="window.location.href='index.html'">🏠 Inicio</button>
     </main>
     
     <footer>

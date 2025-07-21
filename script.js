@@ -37,3 +37,35 @@ function realizarSuma() {
 
     document.getElementById("resultadoSuma").innerHTML = resultadoHTML;
 }
+function calcularOperacion() {
+    const num1 = parseInt(document.getElementById("num1").value);
+    const num2 = parseInt(document.getElementById("num2").value);
+    const op = document.getElementById("operacion").value;
+
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById("resultadoOperacion").innerText = "Por favor ingresá ambos números.";
+        return;
+    }
+
+    let resultado;
+    if (op === "+") {
+        resultado = num1 + num2;
+    } else if (op === "-") {
+        resultado = num1 - num2;
+    } else if (op === "*") {
+        resultado = num1 * num2;
+    }
+
+    const simbolo = op === "*" ? "x" : op;
+
+    const resultadoHTML = `
+        <pre>
+   ${num1}
+${simbolo.padStart(2)} ${num2}
+-------
+   ${resultado}
+        </pre>
+    `;
+
+    document.getElementById("resultadoOperacion").innerHTML = resultadoHTML;
+}

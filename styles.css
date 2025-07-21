@@ -201,35 +201,37 @@ main {
     font-size: 28px;
 }
 
-.suma-form input {
-    width: 45%;
+.suma-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.suma-form input,
+.suma-form select {
+    width: 30%;
     padding: 12px;
-    margin: 10px 5px;
     font-size: 18px;
     border: 2px solid #ffb74d;
     border-radius: 10px;
+    text-align: center;
 }
 
 .suma-form button {
-    padding: 10px 20px;
-    background-color: #ff9800;
+    width: 90%;
+    padding: 12px;
+    background-color: #4caf50;
     color: white;
     font-size: 18px;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .suma-form button:hover {
-    background-color: #f57c00;
+    background-color: #388e3c;
 }
-
-.resultado-suma {
-    margin-top: 25px;
-    font-family: 'Courier New', monospace;
-    font-size: 26px;
-    color: #4e342e;
-}
-

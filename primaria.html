@@ -21,6 +21,21 @@
     <main style="padding: 40px;">
         <p>Bienvenido a la sección de educación primaria. Aquí encontrarás recursos para estudiantes de nivel inicial.</p>
         <button class="btn-inicio" onclick="window.location.href='index.html'">🏠 Inicio</button>
+        <section class="suma-section">
+            <h2>🧮 Suma de Números</h2>
+            <p>Ingresá dos números y te mostramos el resultado de la suma:</p>
+
+            <div class="suma-form">
+                <input type="number" id="num1" placeholder="Primer número">
+                <input type="number" id="num2" placeholder="Segundo número">
+                <button onclick="realizarSuma()">Sumar</button>
+            </div>
+
+            <div class="resultado-suma" id="resultadoSuma">
+                <!-- Acá se mostrará el resultado -->
+            </div>
+        </section>
+
     </main>
     
     <footer>

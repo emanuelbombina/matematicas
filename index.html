@@ -7,23 +7,39 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<footer>
-    <p>Seguinos en nuestras redes</p>
-    <div class="redes">
-        <a href="https://www.youtube.com/@capacitacionesinfo" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/capacitacionesinfo" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/capacitacionesinfo" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    </div>
-</footer>
 <body>
-    <header>
-        <h1>Bienvenidos al Portal Educativo de Matemáticas</h1>
-    </header>
-    <main class="botonera">
-        <button onclick="irAPagina('primaria.html')">Primaria</button>
-        <button onclick="irAPagina('secundaria.html')">Secundaria</button>
-        <button onclick="irAPagina('universidad.html')">Universidad</button>
+    <nav class="navbar">
+        <div class="logo">Portal Educativo</div>
+        <div class="menu" id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="primaria.html">Primaria</a>
+            <a href="secundaria.html">Secundaria</a>
+            <a href="universidad.html">Universidad</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="inicio">
+        <h1>Bienvenidos al Portal Educativo</h1>
+        <div class="botonera">
+            <button onclick="irAPagina('primaria.html')">Primaria</button>
+            <button onclick="irAPagina('secundaria.html')">Secundaria</button>
+            <button onclick="irAPagina('universidad.html')">Universidad</button>
+        </div>
     </main>
+
+    <footer>
+        <p>Seguinos en nuestras redes</p>
+        <div class="redes">
+            <a href="https://www.youtube.com/@capacitacionesinfo" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/capacitacionesinfo" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/capacitacionesinfo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
